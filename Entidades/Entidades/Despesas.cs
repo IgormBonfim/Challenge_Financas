@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace Entidades.Entidades
 {
-    [Table("TB_RECEITA")]
-    public class Receitas
+    [Table("TB_DESPESA")]
+    public class Despesas
     {
-        [Column("RECEITA_ID")]
+        [Column("DESPESA_ID")]
         public int Id { get; set; }
 
-        [Column("RECEITA_DESCRICAO")]
+        [Column("DESPESA_DESCRICAO")]
         [MaxLength(255)]
         [Required()]
         public string Descricao { get; set; }
 
-        [Column("RECEITA_VALOR")]
+        [Column("DESPESA_VALOR")]
         [Required()]
         public double Valor { get; set; }
 
-        [Column("RECEITA_DATA")]
+        [Column("DESPESA_DATA")]
         [Required()]
         public DateTime Data { get; set; }
 
