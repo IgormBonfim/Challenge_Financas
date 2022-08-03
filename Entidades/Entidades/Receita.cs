@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Entidades.Entidades
 {
     [Table("TB_RECEITA")]
-    public class Receitas
+    public class Receita
     {
         [Column("RECEITA_ID")]
         public int Id { get; set; }
